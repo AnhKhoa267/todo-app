@@ -10,7 +10,7 @@ const Navbar = () => {
                         <BsBook className='text-white text-4x1' />
                     </div>
                     <div>
-                        <p className='text-white text-3x1'>My Coding Book</p>
+                        <p className='text-white text-3x1'>Lập trình Web</p>
                     </div>
                 </div>
             </section>

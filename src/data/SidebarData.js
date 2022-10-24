@@ -12,8 +12,13 @@ export const SidebarData = [
         icon: <FaIcons.FaInfo/>,
     },
     {
+        title: "TimeLine",
+        path: "/timeline",
+        icon: <FaIcons.FaClock/>,
+    },
+    {
         title: "ToDo",
         path: "/todo",
         icon: <FaIcons.FaBlogger/>,
-    },
+    }
 ]

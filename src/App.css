@@ -158,7 +158,6 @@ centered{
 .container {
   position: relative;
   width: 100%;
-  background: #fff;
   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
 
@@ -193,7 +192,7 @@ centered{
 
 
 .contactInfo {
-  padding-top: 40px;
+  padding-top: 34.1px;
 }
 
 .title {
@@ -296,79 +295,137 @@ margin: 10px auto;
   font-size: 20px;
 }
 
-/* phần bên phải */
-.semi-bold {
-  font-weight: bold;
-  font-size: 18px;
+
+/*  */
+.main{
+	width: 100%;
+	height: auto;
+	font-family: pop;
+	padding-top: 50px;
+	place-items: center;
+}
+.main .heading{
+	font-size: 27px;
+	font-weight: 500;
+	color: rgb(106, 6, 236);
+	position: relative;
+	margin-bottom: 50px;
+  text-align: center;
+}
+.heading::after{
+	position: absolute;
+	content: ' ';
+	width: 15%;
+	height: 4px;
+	left: 50%;
+	bottom: -5px;
+	background-image: linear-gradient(to right, rgb(106, 6, 236), rgb(220, 0, 240));
+	transform: translateX(-50%);
 }
 
-.container .title {
-  margin-bottom: 20px;
+/* Container CSS Start  */
+
+.side ul{
+	list-style: none;
+}
+.side ul::after{
+	position: absolute;
+	content: ' ';
+	width: 2px;
+	height: 70vh;
+	background-image: linear-gradient(to bottom, rgb(106, 6, 236), rgb(220, 0, 240));
+	align-items: center;
+	top: 200px;
+	transform: translateX(-50%);
+	z-index: 0;
+}
+.side ul li{
+	width: 50%;
+	height: auto;
+	padding: 15px 20px;
+	background-color: #fff;
+	box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.284);
+	border-radius: 10px;
+	margin-bottom: 30px;
+	z-index: 99;
+	position: relative;
+}
+.side ul li:nth-child(odd){
+	float: left;
+	clear: right;
+	transform: translateX(-30px);
+	text-align: right;
+}
+.side ul li:nth-child(even){
+	float: right;
+	clear: left;
+	transform: translateX(30px);
+}
+.side ul li:nth-child(4){
+	margin-bottom: 0;
+}
+.side ul li .title{
+	font-size: 20px;
+	font-weight: 500;
+	color: rgb(106, 6, 236);
+}
+ul li p{
+	font-size: 15px;
+	color: #444;
+	margin: 7px 0;
+	line-height: 23px;
 }
 
-.container .resume_item {
-  padding: 25px 0;
-  border-bottom: 2px solid #b1eaff;
+.side ul {
+    list-style: none;
+    margin: 0;
+    padding: 40px;
 }
 
-.container .right-slide {
-  width: 520px;
-  background: #fff;
-  padding: 25px;
+ul li a{
+	font-size: 15px;
+	color: rgb(106, 6, 236);
+	text-decoration: none;
+}
+ul li .date{
+	position: absolute;
+	top: -48px;
+	width: 135px;
+	height: 35px;
+	border-radius: 20px;
+	color: #fff;
+	background-image: linear-gradient(to right, rgb(106, 6, 236), rgb(220, 0, 240));
+	display: grid;
+	place-items: center;
+	font-size: 14px;
+	box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.418);
+}
+.side ul li:nth-child(odd) .date{
+	right: 20px;
 }
 
-.container .right-slide .bold {
-  color: #0bb5f4;
+.side ul li .circle{
+	width: 30px;
+	height: 30px;
+	background-color: rgba(220, 0, 240, 0.403);
+	border-radius: 50%;
+	position: absolute;
+	top: 0; 
+	z-index: 99;
+	height: 15px;
+	background-color: rgb(106, 6, 236);
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.side ul li:nth-child(odd) .circle{
+	right: -30px;
+	transform: translate(50%, -50%);
+}
+.side ul li:nth-child(even) .circle{
+	left: -30px;
+	transform: translate(-50%, -50%);
 }
 
-
-.container .right-slide .resume_work ul,
-.container .right-slide .resume_education ul,
-.container .right-slide .resume_about ul {
-  padding-left: 40px;
-  overflow: hidden;
-}
-
-.container .right-slide ul li {
-  position: relative;
-}
-
-.container .right-slide ul li .date {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #1a59e2;
-}
-
-.container .right-slide ul li .info {
-  margin-bottom: 20px;
-}
-
-.container .right-slide ul li:last-child .info {
-  margin-bottom: 0;
-}
-
-.container .right-slide .resume_about ul li:before,
-.container .right-slide .resume_work ul li:before,
-.container .right-slide .resume_education ul li:before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: -25px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  border: 2px solid #0bb5f4;
-}
-
-.container .right-slide .resume_about ul li:after,
-.container .right-slide .resume_work ul li:after,
-.container .right-slide .resume_education ul li:after {
-  content: "";
-  position: absolute;
-  top: 14px;
-  left: -21px;
-  width: 2px;
-  height: 115px;
-  background: #0bb5f4;
-}
