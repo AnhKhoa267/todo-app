@@ -18,7 +18,7 @@ export const SidebarData = [
     },
     {
         title: "ToDo",
-        path: "/todo",
+        path: "/todo-app/todo",
         icon: <FaIcons.FaBlogger/>,
     }
 ]

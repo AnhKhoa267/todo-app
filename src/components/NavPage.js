@@ -13,7 +13,7 @@ const NavPage = () => {
                     <Route path="/" element={<Home />}/>
                     <Route path="/information" element={<Infor />}/>
                     <Route path="/timeline" element={<TimeLine />}/>
-                    <Route path="/todo" element={<ToDo />}/>
+                    <Route path="/todo-app/todo" element={<ToDo />}/>
                 </Routes>
             </section>
         </React.Fragment>
