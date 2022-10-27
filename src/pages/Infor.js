@@ -96,17 +96,17 @@ const Infor = () => {
                                 <ul>
                                     <li>
                                         <span className="icon1"><i className="fa fa-gamepad" aria-hidden="true"></i></span>                        
-                                        <span className="text"><center style={{"font-size": "25px"}}>Game</center></span>
+                                        <span className="text"><center style={{"fontSize": "25px"}}>Game</center></span>
                                     </li>
 
                                     <li>
                                         <span className="icon1"><i className="fa fa-film" aria-hidden="true"></i></span>
-                                        <span className="text"><center style={{"font-size": "25px"}}>Film</center></span>
+                                        <span className="text"><center style={{"fontSize": "25px"}}>Film</center></span>
                                     </li>
 
                                 <li>
                                         <span className="icon1"><i className="fa fa-plane" aria-hidden="true"></i></span>
-                                        <span className="text"><center style={{"font-size": "25px"}}>Travel</center></span>
+                                        <span className="text"><center style={{"fontSize": "25px"}}>Travel</center></span>
                                     </li>                        
                                 </ul>
                             </div>
